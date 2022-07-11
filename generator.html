@@ -10,12 +10,18 @@
     <script>
         function * gennum() {
             let i = 0;
-            yield 1;
-            yield 2;
-            yield 3;
+            // yield 1;
+            // yield 2;
+            // yield 3;
+
+            while (true) {
+                yield i++
+            }
         }
 
         const gen = gennum();
+        console.log(gen.next().value);
+        console.log(gen.next().value);
         console.log(gen.next().value);
         console.log(gen.next().value);
     </script>
