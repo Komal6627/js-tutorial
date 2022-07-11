@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //   const person = {
+        //    "id": 100,
+        //    "name":"Komal",
+        //    "city":"Pune" 
+        // }
+
+        // let {name} = person;
+        // console.log(name);
+
+
+        // let name = person;
+        // console.log(name);
+
+        let person = {
+            firstName: 'John',
+            lastName: 'Doe',
+            middleName: 'C.',
+            currentAge: 28
+        };
+
+
+        let { firstName, lastName, mn:middleName = '', age:currentAge = 18 } = person;
+        console.log(firstName);
+        console.log(middleName); // 'C.'
+        console.log(currentAge); // 28
+    </script>
+</body>
+
+</html>
