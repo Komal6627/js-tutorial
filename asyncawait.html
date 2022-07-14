@@ -7,18 +7,18 @@
     <title>Document</title>
 </head>
 <body>
-    
     <script>
-        //Foreach
-        const arr = ['a','b','c'];
+        async function myDisplay() {
+            let promise = new Promise(function(resolve, reject) {
+              setTimeout(  resolve("This is new function"),3000)
+            });
 
-         arr.forEach(ele => {console.log(ele)});
+            let newp = await promise;
+            console.log(newp);
+        }
+        myDisplay();
 
-        //Map
-        const matrial = ['soil','oil','water'];
 
-      //  matrial.map(ele => {console.log(ele);});
-      //  matrial.map(ele => {console.log(ele.length);});
     </script>
 </body>
 </html>
